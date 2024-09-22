@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+body{
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+header{
+    padding: 2vw;
+    display: block;
+    background-color: #248C8C;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+footer{
+    padding: 2vw;
+    display: block;
+    background-color: #248C8C;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+
+table{
+    border-collapse: separate;
+    border-spacing: 0 12px; 
+}
+
+.input_transformation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2%;
+    gap: 30px;
+}
+
+.presentation{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.title_input{
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+}
+
+.text_cont{
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 20px;
+}
+.input_ip{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #000000;
+    justify-content: center;
+    align-content: center;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    border-radius: 20px;
+    width: 500px;
+    height: 10vh;
+    padding: 50px;
+    gap: 30px;
+    box-shadow: 0px 7px 4px rgba(0, 0, 0, 0.2);
+}
+
+.div_binary{
+    display: flex;
+    justify-content: center;
+    border: 2px solid #000000;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    border-radius: 20px;
+    width: 500px;
+    height: 5vh;
+    padding: 0px 50px 30px 50px;
+    box-shadow: 0px 7px 4px rgba(0, 0, 0, 0.2);
+}
+
+.results{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.results_sub{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.results_ip{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.results_ip_type{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.calculate_button{
+    background-color: #248C8C;
+    color: #ffffff;
+    border: 2px solid #000000;
+    font-family: "Roboto", sans-serif;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    height: 6vh;
+    box-shadow: 0px 7px 4px rgba(0, 0, 0, 0.2);
+}
+
+.input_byte{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    align-items: center;
+    padding: 5px;
+    gap: 20px;
+}
+
+.byte_ip{
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    height: 4vh;
+    width: 60px;
+    border: 2px solid #000000;
+    font-size: 1.1rem;
+    border-radius: 8px;
+}
+
+.mask_ip{
+    display: flex;
+    flex-direction: column;
+    border: 5px;
+    border: 2px solid #000000;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    border-radius: 20px;
+    height: 20vh;
+    width: 400px;
+    padding: 20px;
+    box-shadow: 0px 7px 4px rgba(0, 0, 0, 0.2);
+}
+
+.calculate_button:hover{
+    background-color: rgb(0, 173, 216);
+}
+
+.highlight_host{
+    background-color: rgb(229, 188, 4);
+    color: aqua;
+}
+
+@media (max-width: 900px){
+
+    .results{
+        justify-content: center;
+    }
+
+    .results_sub{
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .results_ip{
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .results_ip_type{
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .input_ip{
+        width: 80vw;
+    }
+}
+
+
+
+
+

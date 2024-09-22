@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <header>Caluladora IPv4</header>
+    <main class="presentation">
+        <section class="input_transformation">
+
+            <section class="inputs">
+                <div class="input_ip">
+                    <h3 class="title_input">Dirección IP</h3>
+                    <div class="input_byte">
+                        <input class="byte_ip" id="byte_1" type="text" placeholder="255">
+                        <h3 class="title_input">.</h3>
+                        <input class="byte_ip" id="byte_2" type="text" placeholder="255">
+                        <h3 class="title_input">.</h3>
+                        <input class="byte_ip" id="byte_3" type="text" placeholder="255">
+                        <h3 class="title_input">.</h3>
+                        <input class="byte_ip" id="byte_4" type="text" placeholder="255">
+                        <h3 class="title_input">/</h3>
+                        <input class="byte_ip" id="mask" type="text" placeholder="31">
+                    </div>
+                </div>
+    
+                <button class="calculate_button" onclick="calculateResult()">Calcular</button>
+
+                <div class="div_binary">
+                    <h3 class="title_input" id="ip_binary">0000.0000.0000.0000</h3>
+                </div>
+            </section>
+           
+
+            <section class="results">
+                <div class="results_ip_type">
+                    <div class="mask_ip">
+                        <h3 class="title_input">Clase de IP:</h3>
+                        <h3 class="text_cont" id="ip_class">Ninguna</h3>
+                    </div>
+
+                    <div class="mask_ip">
+                        <h3 class="title_input">Tipo de IP:</h3>
+                        <h3 class="text_cont" id="ip_type">Ninguna</h3>
+                    </div>
+                </div>
+                <div class="results_sub">
+                    <div class="mask_ip">
+                        <h3 class="title_input">Máscara de red:</h3>
+                        <h3 class="text_cont" id="mask_binary">11111111.11111111.111111111.11111111</h3>
+                        <h3 class="text_cont" id="mask_dec">255.255.255.255</h3> 
+                    </div>
+
+                    <div class="mask_ip">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td class="title_input">Cantidad de host utiles:</td>
+                                </tr>
+                                <tr>
+                                    <td class="text_cont" id="host">0</td>
+                                </tr>
+                                <tr>
+                                    <td class="title_input">Rango IP utiles:</td>
+                                </tr>
+                                <tr>
+                                    <td class="text_cont" id="ip_range">xxxx - xxxx</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>  
+                </div>
+                
+                <div class="results_ip">
+                    <div class="mask_ip">
+                        <h3 class="title_input">Dirección IP de red:</h3>
+                        <h3 class="text_cont" id="net_binary">11111111.11111111.111111111.11111111</h3>
+                        <h3 class="text_cont" id="net_dec">255.255.255.255</h3>
+                    </div>
+
+                    <div class="mask_ip">
+                        <h3 class="title_input">Dirección IP Broadcast:</h3>
+                        <h3 class="text_cont" id="broad_binary">11111111.11111111.111111111.11111111</h3>
+                        <h3 class="text_cont" id="broad_dec">255.255.255.255</h3>
+                    </div>
+                </div>
+                
+            </section>
+        </section>
+    </main>
+    <script src="./Javascript.js"></script>
+    <footer> © 2024 David Esteban López Castillo </footer>
+</body>
+</html>
