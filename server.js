@@ -3,7 +3,7 @@ const { readFile } = require('node:fs');
 const { join, extname } = require('node:path');
 
 const hostname = '127.0.0.1';
-const port = 8080;
+const port = 80;
 
 // Mapeo de extensiones a tipos MIME
 const mimeTypes = {
